@@ -10,17 +10,17 @@ Clone this repo and open contracts folder in terminal.
 
 Run command
 
-eosio-cpp -o cardgame.wasm cardgame.cpp -abigen
+> eosio-cpp -o cardgame.wasm cardgame.cpp -abigen
 
 This command will generate .wasm and .abi file which we will deploy on eosio blockchain.
 
-start keosd with following command :
+start **keosd** with following command :
 
 > keosd &
 
 keosd securely stores and manages keys
 
-start nodeos with following command
+start **nodeos** with following command
 
 >nodeos -e -p eosio \
 >  --plugin eosio::producer_plugin \
@@ -33,3 +33,4 @@ start nodeos with following command
 >  --http-validate-host=false \
 >  --verbose-http-errors \
 >  --filter-on='*' >> nodeos.log 2>&1 &
+
