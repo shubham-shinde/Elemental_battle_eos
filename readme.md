@@ -14,9 +14,9 @@ eosio-cpp -o cardgame.wasm cardgame.cpp -abigen
 
 This command will generate .wasm and .abi file which we will deploy on eosio blockchain.
 
-start keosd with following command
+start keosd with following command :
 
-keosd &
+> keosd &
 
 keosd securely stores and manages keys
 
