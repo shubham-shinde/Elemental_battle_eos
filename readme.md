@@ -72,9 +72,31 @@ Now create an account to deploy our contract on blockchain
 
 Note : These two keys are the public keys of active and owner key
 
+## Deploy smart contract on eosio blockchain
 
+We have generated wasm file and abi file and we also have and account named cardgameacc to deploy our contract
+Write command
+> pwd
+It will give the exact path of your wasm and abi dir. Copy path
 
+> cleos set contract cardgameacc (paste the path) --permission cardgameacc
 
+& your smart-contract is deployed
 
+## Create Player account
 
+> cleos create account eosio player EOS8Du668rSVDE3KkmhwKkmAyxdBd73B51FKE7SjkKe5YERBULMrw EOS8Du668rSVDE3KkmhwKkmAyxdBd73B51FKE7SjkKe5YERBULMrw
 
+The private key associated with this public key is 5KFyaxQW8L6uXFB6wSgC44EsAbzC7ideyhhQ68tiYfdKQp69xKo
+You have to use this private key to login the user
+
+## Frontend
+
+Now go to frontend folder and write command:
+> npm install
+then,
+> npm start
+
+Your app will open on default browser. Give player name i.e. player and private key 5KFyaxQW8L6uXFB6wSgC44EsAbzC7ideyhhQ68tiYfdKQp69xKo to login to game
+
+**And enjoy the game**
